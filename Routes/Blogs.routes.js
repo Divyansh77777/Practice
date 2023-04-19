@@ -2,7 +2,7 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const blogRouter = express.Router();
 const jwt = require("jsonwebtoken")
-const authorise = require("../Middlewares/Authorization")
+const {authorise} = require("../Middlewares/Authorization")
 const { blogmodel } = require("../Models/Blog.model");
 
 
